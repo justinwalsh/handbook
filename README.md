@@ -35,6 +35,60 @@ Here are the packages I use to make Sublime even more awesome. Note: Install 'Pa
 * [Theme - Soda](https://github.com/buymeasoda/soda-theme/) - My prefered Sublime theme.
 * [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces) - Makes it easier to spot and remove trailing spaces.
 
+#### JsFormat Settings
+This will auto run the JsFormat on any files detected as JavaScript or JSON when saved.
+
+Menu: `Sublime Text 2 -> Preferences -> Package Settings -> JsFormat -> Settings - User`
+
+	{
+		"format_on_save": true
+	}
+
+#### Trailing Spaces Settings
+This will auto cleanup any trailing spaces in a document when saved.
+
+Menu: `Sublime Text 2 -> Preferences -> Package Settings -> Trailing Spaces -> Settings - User`
+
+	{
+		"trailing_spaces_highlight_color": "comment",
+		"trailing_spaces_modified_lines_only": false,
+		"trailing_spaces_include_current_line": false,
+		"trailing_spaces_trim_on_save": true
+	}
+
+#### Editor Config
+Each project should be setup with a `.editorconfig` file in the root. This will force sublime to respect your indention settings.
+
+Sample `.editorconfig` file:
+
+	; top-most EditorConfig file
+	root = true
+
+	[**]
+	indent_style = space
+	indent_size = 4
+	end_of_line = lf
+	charset = utf-8
+	trim_trailing_whitespace = true
+
+### Custom Key Bindings
+
+I override the default paste behavior with the sublime action `paste_and_indent` which will try to paste at the correct indention level as the surronding code.
+
+Menu: `Sublime Text 2 -> Preferences -> Key Bindings - User`
+
+	[{
+			"keys": ["super+shift+j"],
+			"command": "js_format"
+		}, {
+			"keys": ["super+v"],
+			"command": "paste_and_indent"
+		}, {
+			"keys": ["super+shift+v"],
+			"command": "paste"
+		}
+	]
+
 ##JavaScript
 
 I spend most of my day writing JavaScript. This is how I prefer to do it.
