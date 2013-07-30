@@ -56,6 +56,17 @@ Menu: `Sublime Text 2 -> Preferences -> Package Settings -> Trailing Spaces -> S
 		"trailing_spaces_trim_on_save": true
 	}
 
+
+#### Terminal
+I use iTerm 2 for my terminal, to open iTerm by default using the Terminal plugin, change the following setting:
+
+Menu: `Sublime Text 2 -> Preferences -> Package Settings -> Terminal -> Settings - User`
+
+	{
+		"terminal": "iTerm.sh"
+	}
+
+
 #### Editor Config
 Each project should be setup with a `.editorconfig` file in the root. This will force sublime to respect your indention settings.
 
