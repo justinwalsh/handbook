@@ -28,6 +28,7 @@ Here are the packages I use to make Sublime even more awesome. Note: Install 'Pa
 * [Git](https://github.com/kemayo/sublime-text-2-git) - Adds some nice GIT features. I mostly use 'blame' to dig into changes.
 * [GitGutter](https://github.com/jisaacks/GitGutter) - Adds indicators next to line numbers to signify changed or modified lines. Helps review/cleanup code changes before commiting.
 * [JsFormat](https://github.com/jdc0589/JsFormat) - A great tool for formating JS or JSON code before commiting.
+* [JSHint Gutter](https://github.com/victorporof/Sublime-JSHint) - Great for checking for JS errors
 * [Package Control](http://wbond.net/sublime_packages/package_control) - A must have plugin for installing the rest of these plugin.
 * [SFTP](http://wbond.net/sublime_packages/sftp) - Adds a full suite of FTP features to Sublime.
 * [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) - Adds alot of great features to the sidebar context menu.
@@ -59,6 +60,23 @@ Menu: `Sublime Text 2 -> Preferences -> Package Settings -> JsFormat -> Settings
 
 	{
 		"format_on_save": true
+	}
+
+#### JSHint Gutter Settings
+
+Menu: `Sublime Text 2 -> Preferences -> Package Settings -> JSHint Gutter -> Set Linting Preferences`
+
+	{
+		"node": true,
+		"esnext": true,
+		"globals": {},
+		"smarttabs": true,
+		"trailing": true,
+		"undef": true,
+		"unused": true,
+		"devel": true,
+		"browser": true,
+		"multistr": true
 	}
 
 #### Trailing Spaces Settings
