@@ -33,7 +33,7 @@ Here are the packages I use to make Sublime even more awesome. Note: Install 'Pa
 * [SFTP](http://wbond.net/sublime_packages/sftp) - Adds a full suite of FTP features to Sublime.
 * [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) - Adds alot of great features to the sidebar context menu.
 * [Terminal](http://wbond.net/sublime_packages/terminal) - Add a 'Open a Terminal Here' option on the sidebar context menu.
-* [Theme - Flatland](https://github.com/buymeasoda/soda-theme/) - My current prefered Sublime theme.
+* [Theme - Flatland](https://github.com/thinkpixellab/flatland) - My current prefered Sublime theme.
 * [Theme - Soda](https://github.com/buymeasoda/soda-theme/) - My old prefered Sublime theme.
 * [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces) - Makes it easier to spot and remove trailing spaces.
 
@@ -43,15 +43,24 @@ These are my general user settings for sublime, some are package related.
 Menu: `Sublime Text 2 -> Preferences -> Settings - User`
 
 	{
-		"theme": "Flatland Dark.sublime-theme",
-		"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
-		"flatland_square_tabs": true,
-		"flatland_sidebar_tree_xsmall": true,
-		"ignored_packages": [
-			"Vintage"
-		],
-		"open_files_in_new_window": false
+	  "color_scheme": "Packages/User/Flatland Monokai (SL).tmTheme",
+	  "draw_white_space": "all",
+	  "font_size": 11,
+	  "ignored_packages":
+	  [
+	    "Vintage"
+	  ],
+	  "open_files_in_new_window": false,
+	  "rulers":
+	  [
+	    80
+	  ],
+	  "tab_size": 2,
+	  "theme": "Flatland Dark.sublime-theme",
+	  "translate_tabs_to_spaces": true,
+	  "trim_trailing_white_space_on_save": true
 	}
+
 
 #### JsFormat Settings
 This will auto run the JsFormat on any files detected as JavaScript or JSON when saved.
@@ -142,7 +151,7 @@ I follow the general practices of the following [style guide](http://javascript.
 ### General Rules
 
 * Semicolons everywhere.
-* Indentation should use 4 spaces. Tabs should never be used.
+* Indentation should use 2 spaces. Tabs should never be used.
 * Lines should have soft breaks at 80 characters for readability.
 * Declare all vars at the begining of scope.
 * Brackets go on the same line as function/if/switch statement.
