@@ -43,15 +43,24 @@ These are my general user settings for sublime, some are package related.
 Menu: `Sublime Text 2 -> Preferences -> Settings - User`
 
 	{
-		"theme": "Flatland Dark.sublime-theme",
-		"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
-		"flatland_square_tabs": true,
-		"flatland_sidebar_tree_xsmall": true,
-		"ignored_packages": [
-			"Vintage"
-		],
-		"open_files_in_new_window": false
+	  "color_scheme": "Packages/User/Flatland Monokai (SL).tmTheme",
+	  "draw_white_space": "all",
+	  "font_size": 11,
+	  "ignored_packages":
+	  [
+	    "Vintage"
+	  ],
+	  "open_files_in_new_window": false,
+	  "rulers":
+	  [
+	    80
+	  ],
+	  "tab_size": 2,
+	  "theme": "Flatland Dark.sublime-theme",
+	  "translate_tabs_to_spaces": true,
+	  "trim_trailing_white_space_on_save": true
 	}
+
 
 #### JsFormat Settings
 This will auto run the JsFormat on any files detected as JavaScript or JSON when saved.
@@ -142,7 +151,7 @@ I follow the general practices of the following [style guide](http://javascript.
 ### General Rules
 
 * Semicolons everywhere.
-* Indentation should use 4 spaces. Tabs should never be used.
+* Indentation should use 2 spaces. Tabs should never be used.
 * Lines should have soft breaks at 80 characters for readability.
 * Declare all vars at the begining of scope.
 * Brackets go on the same line as function/if/switch statement.
