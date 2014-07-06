@@ -33,7 +33,7 @@ Here are the packages I use to make Sublime even more awesome. Note: Install 'Pa
 * [SFTP](http://wbond.net/sublime_packages/sftp) - Adds a full suite of FTP features to Sublime.
 * [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements) - Adds alot of great features to the sidebar context menu.
 * [Terminal](http://wbond.net/sublime_packages/terminal) - Add a 'Open a Terminal Here' option on the sidebar context menu.
-* [Theme - Flatland](https://github.com/buymeasoda/soda-theme/) - My current prefered Sublime theme.
+* [Theme - Flatland](https://github.com/thinkpixellab/flatland) - My current prefered Sublime theme.
 * [Theme - Soda](https://github.com/buymeasoda/soda-theme/) - My old prefered Sublime theme.
 * [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces) - Makes it easier to spot and remove trailing spaces.
 
