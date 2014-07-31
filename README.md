@@ -67,16 +67,17 @@ Menu: `Sublime Text 2 -> Preferences -> Package Settings -> JsFormat -> Settings
 Menu: `Sublime Text 2 -> Preferences -> Package Settings -> JSHint Gutter -> Set Linting Preferences`
 
 	{
-		"node": true,
-		"esnext": true,
-		"globals": {},
-		"smarttabs": true,
-		"trailing": true,
+		"browser": true,
+		"globals": {
+			"escape": true
+		},
 		"undef": true,
 		"unused": true,
+		"node": true,
 		"devel": true,
-		"browser": true,
-		"multistr": true
+		"multistr": true,
+		"strict": false,
+		"quotmark": false
 	}
 
 #### Trailing Spaces Settings
